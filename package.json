@@ -1,0 +1,14 @@
+{
+  "name": "lenkapenka-stack",
+  "version": "0.0.1",
+  "description": "LIFO",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test.spec.js"
+  },
+  "author": "Elena Seredova",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  }
+}
