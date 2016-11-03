@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/eseredova/lenkapenka-stack.svg?branch=master)](https://travis-ci.org/eseredova/lenkapenka-stack)
+[![Dependency Status](https://www.versioneye.com/user/projects/581b54084304530b557dc694/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/581b54084304530b557dc694)
 
 
 # Stack
