@@ -1,6 +1,11 @@
 # Stack
 Simple stack implementation in JavaScript
 
+# How to develop
+git clone git@github.com:eseredova/lenkapenka-stack.git
+cd lenkapenka-stack
+npm install
+
 # API
 ```javascript
 const Stack = require('lenkapenka-stack');
