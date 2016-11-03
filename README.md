@@ -2,9 +2,11 @@
 Simple stack implementation in JavaScript
 
 # How to develop
+```bash
 git clone git@github.com:eseredova/lenkapenka-stack.git
 cd lenkapenka-stack
 npm install
+```
 
 # API
 ```javascript
