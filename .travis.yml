@@ -1,3 +1,7 @@
 language: node_js
 node_js:
   - "6"
+before_install:
+  - sudo pip install codecov
+after_success:
+  - codecov
