@@ -3,12 +3,18 @@
   "version": "0.0.1",
   "description": "LIFO",
   "main": "index.js",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/eseredova/lenkapenka-stack.git"
+  },
   "scripts": {
     "test": "./node_modules/.bin/mocha test.spec.js"
   },
   "author": "Elena Seredova",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^3.1.2"
+    "coveralls": "^2.11.14",
+    "mocha": "^3.1.2",
+    "mocha-lcov-reporter": "^1.2.0"
   }
 }
