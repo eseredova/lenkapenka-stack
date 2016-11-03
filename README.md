@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/eseredova/lenkapenka-stack.svg?branch=master)](https://travis-ci.org/eseredova/lenkapenka-stack)
+
+
 # Stack
 Simple stack implementation in JavaScript
 
