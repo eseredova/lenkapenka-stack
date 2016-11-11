@@ -14,7 +14,7 @@ Stack.prototype.isEmpty = function() {
 
 Stack.prototype.pop = function () {
     if (this.stack.length === 0) {
-        console.log('Empty stack!;');
+        throw new Error('Empty stack!');
     } else {
         return this.stack.pop();
     }
@@ -22,7 +22,7 @@ Stack.prototype.pop = function () {
 
 Stack.prototype.peek = function() {
     if (this.stack.length === 0) {
-        console.log('Empty stack!');
+        throw new Error('Empty stack!');
     } else {
         return this.stack[this.stack.length - 1];
     }
