@@ -8,17 +8,13 @@
     "url": "https://github.com/eseredova/lenkapenka-stack.git"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha test.spec.js",
-    "make-cov": "jscoverage index.js index-cov.js",
-    "cov": "npm run make-cov; SM_COV=1 mocha -R html-cov > coverage.html",
-    "coveralls": "npm run make-cov; SM_COV=1 mocha -R mocha-lcov-reporter | coveralls"
+    "test": "./node_modules/.bin/mocha test.spec.js"
   },
   "author": "Elena Seredova",
   "license": "MIT",
   "devDependencies": {
     "coveralls": "^2.11.14",
     "eslint": "^3.9.1",
-    "mocha": "^3.1.2",
-    "mocha-lcov-reporter": "^1.2.0"
+    "mocha": "^3.1.2"
   }
 }

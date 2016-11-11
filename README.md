@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/eseredova/lenkapenka-stack.svg?branch=master)](https://travis-ci.org/eseredova/lenkapenka-stack)
 [![Dependency Status](https://www.versioneye.com/user/projects/581b54084304530b557dc694/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/581b54084304530b557dc694)
-[![Coverage Status](https://coveralls.io/repos/github/eseredova/lenkapenka-stack/badge.svg?branch=master)](https://coveralls.io/github/eseredova/lenkapenka-stack?branch=master)
+
 
 # Stack
 Simple stack implementation in JavaScript
