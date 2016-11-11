@@ -13,12 +13,6 @@ describe('Stack tests', function () {
         assert.strictEqual(typeof stack.pop, 'function', 'stack.pop is not a function');
         assert.strictEqual(typeof stack.peek, 'function', 'stack.peek is not a function');
         assert.strictEqual(typeof stack.isEmpty, 'function', 'stack.isEmpty is not a function');
-
-    });
-
-    it('should be empty by default', function () {
-        const stack = new Stack();
-        assert.ok(stack.isEmpty(), 'New stack is not empty!');
     });
 });
 
@@ -27,6 +21,12 @@ describe('push tests', function () {
         const stack = new Stack();
         stack.push(1);
         assert.strictEqual(stack.isEmpty(), false, 'Stack is empty!');
+    });
+
+    it('should add items on the top of the stack', function() {
+        const stack = new Stack();
+        stack.push(1);
+        assert.strictEqual(stack.stack.length, 1);
     });
 });
 
@@ -47,6 +47,15 @@ describe('pop test', function () {
         }, /Empty stack!/,
         'Did not throw expected error!');
     });
+
+    it('should return value of popping element', function () {
+        const stack = new Stack;
+        stack.push(1);
+        stack.push('hello');
+        assert.strictEqual(stack.pop(), 'hello');
+    });
+
+
 });
 
 describe('peek tests', function () {
@@ -76,6 +85,16 @@ describe('peek tests', function () {
 
 });
 
-// describe('isEmpty tests', function () {
-//
-// });
+describe('isEmpty tests', function () {
+    it('should return true if stack is empty', function() {
+        const stack = new Stack();
+        assert.deepStrictEqual(stack.isEmpty(), true);
+    });
+
+    it('should return false if stack is not empty', function() {
+        const stack = new Stack();
+        stack.push(1);
+        assert.deepStrictEqual(stack.isEmpty(), false);
+    });
+
+});
