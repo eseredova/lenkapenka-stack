@@ -20,9 +20,6 @@ describe('Stack tests', function () {
         const stack = new Stack();
         assert.ok(stack.isEmpty(), 'New stack is not empty!');
     });
-
-
-
 });
 
 describe('push tests', function () {
