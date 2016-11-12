@@ -1,5 +1,6 @@
 'use strict';
 
+const assert = require('assert');
 
 
 class Stack {
@@ -37,11 +38,9 @@ class Stack {
      * @throws Will throw an error if stack is empty
      */
     pop() {
-        if (this.stack.length === 0) {
-            throw new Error('Empty stack!');
-        } else {
-            return this.stack.pop();
-        }
+        assert.strictEqual(this.isEmpty(), false, 'Empty stack');
+        return this.stack.pop();
+
     }
 
     /**
@@ -50,11 +49,8 @@ class Stack {
      * @throws Will throw an error if stack is empty
      */
     peek() {
-        if (this.stack.length === 0) {
-            throw new Error('Empty stack!');
-        } else {
-            return this.stack[this.stack.length - 1];
-        }
+        assert.strictEqual(this.isEmpty(), false, 'Empty stack');
+        return this.stack[this.stack.length - 1];
     }
 }
 
