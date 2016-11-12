@@ -22,12 +22,6 @@ describe('push tests', function () {
         stack.push(1);
         assert.strictEqual(stack.isEmpty(), false, 'Stack is empty!');
     });
-
-    it('should add items on the top of the stack', function() {
-        const stack = new Stack();
-        stack.push(1);
-        assert.strictEqual(stack.stack.length, 1);
-    });
 });
 
 describe('pop test', function () {
@@ -44,8 +38,7 @@ describe('pop test', function () {
         stack.pop();
         assert.throws( () => {
             stack.pop();
-        }, /Empty stack!/,
-        'Did not throw expected error!');
+        }, 'Did not throw expected error!');
     });
 
     it('should return value of popping element', function () {
@@ -78,7 +71,7 @@ describe('peek tests', function () {
         stack.pop();
         assert.throws( () => {
             stack.peek();
-        }, /Empty stack!/, 'Did not throw expected error.');
+        }, 'Did not throw expected error.');
 
 
     });

@@ -8,7 +8,6 @@ class Stack {
     /**
      * Creates a new Stack
      * @constructor
-     * @this {Stack}
      */
     constructor() {
         this.stack = [];
@@ -16,9 +15,8 @@ class Stack {
 
 
     /**
-     * @function
+     * Adds a new element onto the top of the stack
      * @param {object} value any object that you want to store in a stack
-     * @summary Adds a new element onto the top of the stack
      */
     push(value) {
         this.stack.push(value);
@@ -26,20 +24,17 @@ class Stack {
 
 
     /**
-     * Checks if stack is empty
-     * @function
+     * Checks if the stack is empty or not
      * @return {boolean} true if stack is empty, false otherwise
-     * @summary Checks if the stack is empty or not
      */
     isEmpty() {
         return this.stack.length === 0;
     }
 
     /**
-     * @function
+     * Removes the element from the top of the stack
      * @return {object} value of the top element of the stack
      * @throws Will throw an error if stack is empty
-     * @summary Removes the element from the top of the stack
      */
     pop() {
         if (this.stack.length === 0) {
@@ -50,10 +45,9 @@ class Stack {
     }
 
     /**
-     * @function
+     * Returns the element from the top of the stack
      * @return {object} value of the top element of the stack
      * @throws Will throw an error if stack is empty
-     * @summary Returns the element from the top of the stack
      */
     peek() {
         if (this.stack.length === 0) {
