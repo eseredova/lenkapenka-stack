@@ -8,7 +8,8 @@
     "url": "https://github.com/eseredova/lenkapenka-stack.git"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha test.spec.js"
+    "test": "./node_modules/.bin/mocha test.spec.js",
+    "lint": "./node_modules/.bin/eslint *.js; exit 0"
   },
   "author": "Elena Seredova",
   "license": "MIT",
