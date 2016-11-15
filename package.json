@@ -1,6 +1,6 @@
 {
   "name": "lenkapenka-stack",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Stack in JavaScript",
   "main": "index.js",
   "repository": {
